@@ -1,6 +1,6 @@
 {
-  "author": "Singly Team <nerds@singly.com>",
-  "name": "Skeleton-Viewer",
+  "author": "Cornelius Toole, Jr. <cornelius.toole@gmail.com>",
+  "name": "Link Viz App",
   "description": "A minimal Locker application to start building from.",
   "version": "0.0.1",
   "repository": {
@@ -9,10 +9,10 @@
     "type": "app",
     "static": true,
     "uses": {
-        "types":["photos"],
-        "services":["twitter", "flickr", "instagram"]
+        "types":["links"],
+        "services":["twitter", "facebook"]
     },
-    "url": "git://github.com/LockerProject/Skeleton-Viewer.git"
+    "url": "git://github.com/corntoole/Skeleton-Viewer.git"
   },
   "engines": {
     "node": ">=0.4.9"
