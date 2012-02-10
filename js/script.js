@@ -15,12 +15,8 @@ function sortDict(d) {
 }
 
 function loadLinks(){
-<<<<<<< HEAD
-    console.log("Test!!!!");
-    $.getJSON(baseUrl + '/Me/links/', {'limit':100, 'offset': offset, 'fields':'{"title":1,"embed":1}'}, function(data) {
-=======
     $.getJSON(baseUrl + '/Me/links/', {'limit':20, 'offset': offset, 'fields':'{"title":1,"text":1,"embed":1}', 'full':true}, function(data) {
->>>>>>> 9c3ecdf9c12db6c26c35853187156aba256883bb
+
         if(!data || !data.length) {
             console.log("no data!");
             return;
@@ -51,12 +47,7 @@ function loadLinks(){
         for ( var entry in tokens_dict_sorted) {
             html += '<li>#'+entry+'  '+tokens_dict_sorted[entry]+'</li>\n';
         }
-<<<<<<< HEAD
         html += '</ul>';
-        $("#test").html(html);
-=======
->>>>>>> 9c3ecdf9c12db6c26c35853187156aba256883bb
-        console.log(html);
         html = $("#test").html() + html;
         $("#test").html(html);
     });
