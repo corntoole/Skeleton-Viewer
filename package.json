@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "handle": "skeleton-viewer",
-    "title": "Skeleton Viewer App",
+    "title": "Link Viz App",
     "type": "app",
     "static": true,
     "uses": {
