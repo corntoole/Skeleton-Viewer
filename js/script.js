@@ -51,8 +51,8 @@ function loadLinks(){
         for ( var entry in tokens_dict_sorted) {
             html += '<li>#'+entry+'  '+tokens_dict_sorted[entry]+'</li>\n';
         }
+        html += $("#test").html();
         $("#test").html(html);
-        console.log(html);
     });
 }
 
